@@ -21,17 +21,19 @@ header{
     color:black;
     
     background-color:black;
-    border:1.5px solid #fff;
+    border:2px solid #fff;
+    border-radius:30px;
     padding:.9em;
     font-size:1em;
     width:17%;
-    transition:width 2s;
+    transition:width  1.4s ;
+
    
 
 }
 .input-box:focus{
-    color:rgb(139, 0, 0);
-    border:1.5px solid rgb(121, 3, 3);
+    /* color:rgb(255, 255, 255); */
+    border:2px solid rgb(113, 255, 70);
     outline:none;
     width:30%;
 }
