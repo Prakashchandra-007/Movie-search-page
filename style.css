@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    height: 50px;
+    width:100%;
+    background-color:red;
+    opacity:20%;
+    position:fixed;
+    /* display: flex;
+    justify-content:center;
+    top: 0;
+    left: 0;
+
+    height:5%;
+    background-color: #fff;
+    margin: 2%; */
+}
+/**************************************************************main**************************************************/
+
+#main{
+    padding-top:5%; 
+    background-color: rgb(104, 104, 104);
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+#main .movie-card{
+    
+    margin: 3%  auto;
+    max-width: 70vw;
+    width: 40%;
+    height: 10%;
+    background-color: black;
+    overflow: hidden;
+    color: #fff;
+    padding:2%;
+    box-shadow: -1px 2px 20px #000;
+
+
+}
+#main .movie-card img{
+    /* img of every movies card */
+  /* margin:0 auto; */
+  width:100%;
+  
+  
+    
+    
+
+}
+.card-overlay{
+    position:relative;
+    /* display:none; */
+    max-width: 70vw;
+    width: 80%;
+    height: 10%;
+    background-color:black;
+    /* opacity:20%; */
+}
+/* .card-overlay:hover{
+    
+    transform:translatey(50%);
+    opacity:100%;
+} */
