@@ -11,7 +11,15 @@
 
     <body>
         <header>
-            <input class="input-box" type="text" placeholder="Ex: The Rock" >
+            <form id="search">
+                <input class="input-box" id="input-box" type="text" placeholder="Ex: The Rock">
+
+            </form>
+            <button id="modalBtn">
+                <div class="humberger" id="hm1"></div>
+                <div class="humberger" id="hm2"></div>
+                <div class="humberger" id="hm3"></div>
+            </button>
         </header>
         <main id="main">
             <!-- <div class="movie-card">
@@ -25,6 +33,16 @@
                 <p>Vote: 32534 | </p>        
             </div> -->
         </main>
+        <div class="modal-form" id="modal-form">
+            <form action="">
+                <div  class="login-form">
+                    <h1>LOGIN 🔐</h1>
+                    <input type="text" name="username" placeholder="Username" id="">
+                    <input type="password" name="username" placeholder="Password" id="">
+                    <input id="submitBtn" type="submit" value="Login">
+                </div>
+            </form>
+        </div>
         <script src="./js/index.js"></script>
     </body>
 
