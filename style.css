@@ -8,17 +8,32 @@
 header{
     height: 50px;
     width:100%;
-    background-color:red;
-    opacity:20%;
+    background-color:rgba(0, 0, 0, 0.349);
+    /* opacity:20%; */
     position:fixed;
-    /* display: flex;
+    display: flex;
     justify-content:center;
-    top: 0;
-    left: 0;
+    
 
-    height:5%;
-    background-color: #fff;
-    margin: 2%; */
+    padding:1%;
+}
+.input-box{
+    color:black;
+    
+    background-color:black;
+    border:1.5px solid #fff;
+    padding:.9em;
+    font-size:1em;
+    width:17%;
+    transition:width 2s;
+   
+
+}
+.input-box:focus{
+    color:rgb(139, 0, 0);
+    border:1.5px solid rgb(121, 3, 3);
+    outline:none;
+    width:30%;
 }
 /**************************************************************main**************************************************/
 
