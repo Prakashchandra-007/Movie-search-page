@@ -17,8 +17,9 @@ header{
     justify-content:space-between;
     align-items:center;
     z-index:99;
+    padding:2% 5% 0 5%;
 
-    padding:1%;
+    
 }
 .input-box{   
     margin-top: 8px;
@@ -93,6 +94,11 @@ header{
     width:500px;
     padding:10%;
     border-radius: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+
 
 }
 .login-form #submitBtn{
@@ -109,8 +115,12 @@ header{
     color: #000;
     margin-top:8%;
     border:1px solid #fff;
+    box-shadow:0 0 10px #fff;
     transition:1s ease;
    
+}
+#login-head{
+    color: rgb(251, 255, 32);
 }
 .login-form input{
     padding:10px;
