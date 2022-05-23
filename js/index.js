@@ -43,8 +43,9 @@ function showData(dataArr) {
     let content='';
     
     if(dataArr.length==0){
-        console.log("no result found");
-        window.alert("No result found search something else");
+        // console.log("no result found");
+        // window.alert("No result found search something else");
+        document.getElementById('main').innerHTML = '<div id="error-div"><img src="../images/404-error.png"> <a href=""><h3>HOME</h3></a></div>';
         return;
     }
     

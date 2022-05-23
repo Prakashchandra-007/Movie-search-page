@@ -178,3 +178,21 @@ header{
     transform:translatey(50%);
     opacity:100%;
 } */
+#error-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    
+    color:#fff;
+    flex-wrap: wrap-reverse;
+}
+#error-div img{
+    width:40%;   
+    min-width: 250px; 
+}
+#error-div a{
+    text-decoration:none;
+    color:#fff;  
+    
+}
