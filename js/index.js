@@ -9,33 +9,45 @@ async function getData(url) {
     const resp = await fetch(url);
     const data = await resp.json();
     // console.log("insed 1st");
-    // console.log(data.results);
-    // console.log(Array.isArray(data.results))
+    // console.log(data);
+    
     showData(data.results)
 }
 
 search.addEventListener('submit',(e)=>{e.preventDefault();
     query = inputBox.value;
     const searched_movie = searchMovie(query);
-    console.log(searched_movie);
+    // console.log(searched_movie);
 
     inputBox.value='';
     
 })
 
+
+// function to search movie on enter
 async function searchMovie(query){
     let search_url = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query="+query;
     const response = await fetch( search_url);
-    const result_item = response.json(); 
-    console.log(search_url);
-    return result_item ;
+    
+    const result_item =await response.json(); 
+    // console.log(result_item.results);
+    // showData(result_item.results)
+    // console.log(Array.isArray(result_item.results))
+    // return result_item ;
+    showData(result_item.results)
 }
 
 
 // functon to show data on page after gerting from api
 function showData(dataArr) {
-    // console.log(">>>>>>>>>"+dataArr)
     let content='';
+    
+    if(dataArr.length==0){
+        console.log("no result found");
+        window.alert("No result found search something else");
+        return;
+    }
+    
     dataArr.forEach((item, indx, arr) => {
         // console.log(dataArr[indx].title)
         // console.log(dataArr[indx].overview)
